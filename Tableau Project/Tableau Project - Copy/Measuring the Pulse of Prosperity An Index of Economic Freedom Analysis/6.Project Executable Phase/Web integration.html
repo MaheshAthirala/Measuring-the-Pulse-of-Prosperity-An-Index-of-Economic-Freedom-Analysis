@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measuring the Pulse of Prosperity</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+.hero-section{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    color:white;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:3.2rem;
+    font-weight:700;
+}
+
+.btn-custom{
+    background:#0984e3;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+section{ padding:80px 0; }
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.tableau-container{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-card{
+    text-align:center;
+    padding:30px;
+    border:1px solid #eee;
+    border-radius:10px;
+}
+footer{
+    background:#2d3436;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Economic Freedom Analysis</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+<li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-section">
+<div class="container hero-content">
+<h1>Measuring the Pulse of Prosperity</h1>
+<p class="lead">An Index of Economic Freedom Analysis exploring global prosperity, policy effectiveness, and economic openness through data visualization.</p>
+<a href="#dashboard" class="btn btn-custom">Explore Insights</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<div class="section-title">
+<h2>About the Project</h2>
+</div>
+
+<div class="row align-items-center">
+<div class="col-md-6">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" class="img-fluid rounded shadow">
+</div>
+
+<div class="col-md-6">
+<h4>Why Economic Freedom Matters?</h4>
+<p class="text-muted">
+Economic freedom plays a critical role in shaping prosperity, innovation, and living standards.
+This project analyzes economic freedom indicators across countries to understand their relationship with growth and development.
+</p>
+
+<ul class="list-unstyled">
+<li><strong>Global Comparison:</strong> Evaluate economic freedom scores across regions.</li>
+<li><strong>Policy Insights:</strong> Understand how regulatory efficiency and open markets influence growth.</li>
+<li><strong>Data-Driven Story:</strong> Discover patterns linking freedom, prosperity, and investment climate.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="bg-light">
+<div class="container">
+<div class="section-title">
+<h2>Dashboard</h2>
+<p>Visual exploration of global economic freedom indicators</p>
+</div>
+
+<div class="tableau-container">
+
+<div class='tableauPlaceholder' id='vizDashboard'></div>
+
+<script>
+var divElement = document.getElementById('vizDashboard');
+divElement.innerHTML = `
+<object class='tableauViz' width='100%' height='800'>
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='name' value='IndexofEconomicfreedomDasashboard_17717400904530/Dashboard1' />
+<param name='toolbar' value='yes' />
+</object>`;
+var script=document.createElement('script');
+script.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+divElement.appendChild(script);
+</script>
+
+</div>
+</div>
+</section>
+
+<!-- STORY -->
+<section id="story">
+<div class="container">
+<div class="section-title">
+<h2>Story</h2>
+<p>Understanding prosperity through economic freedom trends</p>
+</div>
+
+<div class="tableau-container">
+
+<div class='tableauPlaceholder' id='vizStory'></div>
+
+<script>
+var divElement2 = document.getElementById('vizStory');
+divElement2.innerHTML = `
+<object class='tableauViz' width='100%' height='800'>
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='name' value='StoryofIndexofEconomicfreedom/Story1' />
+<param name='toolbar' value='yes' />
+</object>`;
+var script2=document.createElement('script');
+script2.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+divElement2.appendChild(script2);
+</script>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-light">
+<div class="container">
+<div class="section-title">
+<h2>Contact</h2>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-md-4">
+<div class="contact-card">
+<h5>A Mahesh</h5>
+<p class="text-muted">Data Analyst</p>
+<hr>
+<a href="mailto:maheshathirala@gmail.com">maheshathirala@gmail.com</a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Measuring the Pulse of Prosperity Project</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
